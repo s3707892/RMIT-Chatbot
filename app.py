@@ -6,6 +6,7 @@ import streamlit as st
 import json
 import boto3
 import sqlite3
+import sys
 import pysqlite3
 sys.modules["sqlite3"] = pysqlite3
 sys.modules["sqlite3.dbapi2"] = pysqlite3.dbapi2
