@@ -112,7 +112,7 @@ collection = client.get_or_create_collection("courses")
 #Will only load data if it hasnt been loaded before
 start_populate = time.time()
 if collection.count() == 0:
-    with open("data\\rmit_course_data.json", "r", encoding="utf-8") as f:
+    with open("data/rmit_course_data.json", "r", encoding="utf-8") as f:
         courses_json = json.load(f)
     course_list = []
     documents = []  
