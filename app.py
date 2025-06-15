@@ -5,11 +5,15 @@
 import streamlit as st
 import json
 import boto3
+import sqlite3
 import chromadb
 from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
 import time
 
+import sys
 
+st.write("Python version:", sys.version)
+st.write("SQLite version:", sqlite3.sqlite_version)
 
 
 st.set_page_config(page_title="RMITbot Course Advisor", layout="centered")
