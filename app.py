@@ -12,12 +12,13 @@ import time
 
 import sys
 
-st.write("Python version:", sys.version)
-st.write("SQLite version:", sqlite3.sqlite_version)
+
 
 
 st.set_page_config(page_title="RMITbot Course Advisor", layout="centered")
 
+st.write("Python version:", sys.version)
+st.write("SQLite version:", sqlite3.sqlite_version)
 #Initialise the session (chatbot first message is pre determined to make intiial loading time faster)
 if "messages" not in st.session_state:
     st.session_state.messages = [
